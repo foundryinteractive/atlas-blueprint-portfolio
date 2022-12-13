@@ -4,7 +4,7 @@ This repository contains a starter Blueprint to get you up and running quickly o
 
 ## For more information
 
-For more information on this Blueprint please check out the following sources:
+For more information on this Blueprint please check out the following sources, right down here:
 
 - [WP Engine's Atlas Platform](https://wpengine.com/atlas/)
 - [Faust.js](https://faustjs.org)
