@@ -1,1 +1,552 @@
-{"Node":["Category","EnqueuedScript","EnqueuedStylesheet","ContentType","Taxonomy","User","Comment","MediaItem","Page","Post","PostFormat","Tag","Project","UserRole","Testimonial","Menu","MenuItem","Plugin","Theme","CommentAuthor"],"TermNode":["Category","PostFormat","Tag"],"UniformResourceIdentifiable":["Category","ContentType","User","MediaItem","Page","Post","PostFormat","Tag","Project","Testimonial"],"EnqueuedAsset":["EnqueuedScript","EnqueuedStylesheet"],"DatabaseIdentifier":["Category","User","Comment","MediaItem","Page","Post","PostFormat","Tag","Project","Testimonial","Menu","MenuItem"],"HierarchicalTermNode":["Category"],"MenuItemLinkable":["Category","Page","Post","Tag"],"ContentNode":["MediaItem","Page","Post","Project","Testimonial"],"Commenter":["User","CommentAuthor"],"NodeWithTemplate":["MediaItem","Page","Post","Project","Testimonial"],"ContentTemplate":["DefaultTemplate","Template_Blank","Template_SinglePostNoSeparators","Template_PageNoSeparators","Template_PageLargeHeader"],"NodeWithTitle":["MediaItem","Page","Post","Project","Testimonial"],"NodeWithAuthor":["MediaItem","Page","Post","Project","Testimonial"],"NodeWithComments":["MediaItem","Page","Post"],"HierarchicalContentNode":["MediaItem","Page"],"NodeWithContentEditor":["Page","Post"],"NodeWithFeaturedImage":["Page","Post","Project"],"NodeWithRevisions":["Page","Post"],"NodeWithPageAttributes":["Page"],"NodeWithExcerpt":["Post"],"NodeWithTrackbacks":["Post"],"ContentRevisionUnion":["Post","Page"],"MenuItemObjectUnion":["Post","Page","Category","Tag"]}
+{
+  "Node": [
+    "Article",
+    "ContentType",
+    "Taxonomy",
+    "User",
+    "Comment",
+    "EnqueuedScript",
+    "EnqueuedStylesheet",
+    "Host",
+    "MediaItem",
+    "Page",
+    "Playlist",
+    "Post",
+    "Category",
+    "PostFormat",
+    "Tag",
+    "Project",
+    "UserRole",
+    "Testimonial",
+    "Menu",
+    "MenuItem",
+    "Plugin",
+    "Theme",
+    "CommentAuthor"
+  ],
+  "ContentNode": [
+    "Article",
+    "Host",
+    "MediaItem",
+    "Page",
+    "Playlist",
+    "Post",
+    "Project",
+    "Testimonial"
+  ],
+  "UniformResourceIdentifiable": [
+    "Article",
+    "ContentType",
+    "User",
+    "Host",
+    "MediaItem",
+    "Page",
+    "Playlist",
+    "Post",
+    "Category",
+    "PostFormat",
+    "Tag",
+    "Project",
+    "Testimonial"
+  ],
+  "OneToOneConnection": [
+    "ContentNodeToContentTypeConnectionEdge",
+    "ContentNodeToEditLockConnectionEdge",
+    "CommentToCommenterConnectionEdge",
+    "CommentToContentNodeConnectionEdge",
+    "CommentToParentCommentConnectionEdge",
+    "NodeWithAuthorToUserConnectionEdge",
+    "NodeWithFeaturedImageToMediaItemConnectionEdge",
+    "ContentNodeToEditLastConnectionEdge",
+    "HierarchicalContentNodeToParentContentNodeConnectionEdge",
+    "HostToPreviewConnectionEdge",
+    "NodeWithRevisionsToContentNodeConnectionEdge",
+    "PageToPreviewConnectionEdge",
+    "PlaylistToPreviewConnectionEdge",
+    "CategoryToParentCategoryConnectionEdge",
+    "CategoryToTaxonomyConnectionEdge",
+    "PostFormatToTaxonomyConnectionEdge",
+    "PostToPreviewConnectionEdge",
+    "TagToTaxonomyConnectionEdge",
+    "ProjectToPreviewConnectionEdge",
+    "TestimonialToPreviewConnectionEdge",
+    "ArticleToPreviewConnectionEdge",
+    "MenuItemToMenuItemLinkableConnectionEdge",
+    "MenuItemToMenuConnectionEdge"
+  ],
+  "Edge": [
+    "ContentNodeToContentTypeConnectionEdge",
+    "TaxonomyToContentTypeConnectionEdge",
+    "ContentTypeToTaxonomyConnectionEdge",
+    "ContentTypeToContentNodeConnectionEdge",
+    "ContentNodeToEditLockConnectionEdge",
+    "UserToArticleConnectionEdge",
+    "CommentToCommenterConnectionEdge",
+    "CommentToContentNodeConnectionEdge",
+    "CommentToParentCommentConnectionEdge",
+    "CommentToCommentConnectionEdge",
+    "UserToCommentConnectionEdge",
+    "UserToEnqueuedScriptConnectionEdge",
+    "UserToEnqueuedStylesheetConnectionEdge",
+    "NodeWithAuthorToUserConnectionEdge",
+    "NodeWithFeaturedImageToMediaItemConnectionEdge",
+    "HierarchicalContentNodeToContentNodeAncestorsConnectionEdge",
+    "HierarchicalContentNodeToContentNodeChildrenConnectionEdge",
+    "ContentNodeToEnqueuedScriptConnectionEdge",
+    "ContentNodeToEnqueuedStylesheetConnectionEdge",
+    "ContentNodeToEditLastConnectionEdge",
+    "HierarchicalContentNodeToParentContentNodeConnectionEdge",
+    "MediaItemToCommentConnectionEdge",
+    "HostToPreviewConnectionEdge",
+    "UserToHostConnectionEdge",
+    "UserToMediaItemConnectionEdge",
+    "NodeWithRevisionsToContentNodeConnectionEdge",
+    "PageToCommentConnectionEdge",
+    "PageToPreviewConnectionEdge",
+    "PageToRevisionConnectionEdge",
+    "UserToPageConnectionEdge",
+    "PlaylistToPreviewConnectionEdge",
+    "UserToPlaylistConnectionEdge",
+    "TermNodeToEnqueuedScriptConnectionEdge",
+    "TermNodeToEnqueuedStylesheetConnectionEdge",
+    "CategoryToAncestorsCategoryConnectionEdge",
+    "CategoryToCategoryConnectionEdge",
+    "CategoryToContentNodeConnectionEdge",
+    "CategoryToParentCategoryConnectionEdge",
+    "CategoryToPostConnectionEdge",
+    "CategoryToTaxonomyConnectionEdge",
+    "PostToCategoryConnectionEdge",
+    "PostToCommentConnectionEdge",
+    "PostFormatToContentNodeConnectionEdge",
+    "PostFormatToPostConnectionEdge",
+    "PostFormatToTaxonomyConnectionEdge",
+    "PostToPostFormatConnectionEdge",
+    "PostToPreviewConnectionEdge",
+    "PostToRevisionConnectionEdge",
+    "TagToContentNodeConnectionEdge",
+    "TagToPostConnectionEdge",
+    "TagToTaxonomyConnectionEdge",
+    "PostToTagConnectionEdge",
+    "PostToTermNodeConnectionEdge",
+    "UserToPostConnectionEdge",
+    "ProjectToPreviewConnectionEdge",
+    "UserToProjectConnectionEdge",
+    "UserToRevisionsConnectionEdge",
+    "UserToUserRoleConnectionEdge",
+    "TestimonialToPreviewConnectionEdge",
+    "UserToTestimonialConnectionEdge",
+    "ArticleToPreviewConnectionEdge",
+    "RootQueryToArticleConnectionEdge",
+    "RootQueryToCategoryConnectionEdge",
+    "RootQueryToCommentConnectionEdge",
+    "RootQueryToContentNodeConnectionEdge",
+    "RootQueryToContentTypeConnectionEdge",
+    "RootQueryToHostConnectionEdge",
+    "RootQueryToMediaItemConnectionEdge",
+    "MenuItemToMenuItemConnectionEdge",
+    "MenuItemToMenuItemLinkableConnectionEdge",
+    "MenuItemToMenuConnectionEdge",
+    "MenuToMenuItemConnectionEdge",
+    "RootQueryToMenuItemConnectionEdge",
+    "RootQueryToMenuConnectionEdge",
+    "RootQueryToPageConnectionEdge",
+    "RootQueryToPlaylistConnectionEdge",
+    "RootQueryToPluginConnectionEdge",
+    "RootQueryToPostFormatConnectionEdge",
+    "RootQueryToPostConnectionEdge",
+    "RootQueryToProjectConnectionEdge",
+    "RootQueryToEnqueuedScriptConnectionEdge",
+    "RootQueryToEnqueuedStylesheetConnectionEdge",
+    "RootQueryToRevisionsConnectionEdge",
+    "RootQueryToTagConnectionEdge",
+    "RootQueryToTaxonomyConnectionEdge",
+    "RootQueryToTermNodeConnectionEdge",
+    "RootQueryToTestimonialConnectionEdge",
+    "RootQueryToThemeConnectionEdge",
+    "RootQueryToUserRoleConnectionEdge",
+    "RootQueryToUserConnectionEdge"
+  ],
+  "ContentTypeConnectionEdge": [
+    "ContentNodeToContentTypeConnectionEdge",
+    "TaxonomyToContentTypeConnectionEdge",
+    "RootQueryToContentTypeConnectionEdge"
+  ],
+  "TaxonomyConnection": [
+    "ContentTypeToTaxonomyConnection",
+    "RootQueryToTaxonomyConnection"
+  ],
+  "Connection": [
+    "ContentTypeToTaxonomyConnection",
+    "TaxonomyToContentTypeConnection",
+    "ContentTypeToContentNodeConnection",
+    "UserToArticleConnection",
+    "UserToCommentConnection",
+    "CommentToCommentConnection",
+    "UserToEnqueuedScriptConnection",
+    "UserToEnqueuedStylesheetConnection",
+    "UserToHostConnection",
+    "HierarchicalContentNodeToContentNodeAncestorsConnection",
+    "HierarchicalContentNodeToContentNodeChildrenConnection",
+    "ContentNodeToEnqueuedScriptConnection",
+    "ContentNodeToEnqueuedStylesheetConnection",
+    "MediaItemToCommentConnection",
+    "UserToMediaItemConnection",
+    "UserToPageConnection",
+    "PageToCommentConnection",
+    "PageToRevisionConnection",
+    "UserToPlaylistConnection",
+    "UserToPostConnection",
+    "PostToCategoryConnection",
+    "TermNodeToEnqueuedScriptConnection",
+    "TermNodeToEnqueuedStylesheetConnection",
+    "CategoryToAncestorsCategoryConnection",
+    "CategoryToCategoryConnection",
+    "CategoryToContentNodeConnection",
+    "CategoryToPostConnection",
+    "PostToCommentConnection",
+    "PostToPostFormatConnection",
+    "PostFormatToContentNodeConnection",
+    "PostFormatToPostConnection",
+    "PostToRevisionConnection",
+    "PostToTagConnection",
+    "TagToContentNodeConnection",
+    "TagToPostConnection",
+    "PostToTermNodeConnection",
+    "UserToProjectConnection",
+    "UserToRevisionsConnection",
+    "UserToUserRoleConnection",
+    "UserToTestimonialConnection",
+    "RootQueryToArticleConnection",
+    "RootQueryToCategoryConnection",
+    "RootQueryToCommentConnection",
+    "RootQueryToContentNodeConnection",
+    "RootQueryToContentTypeConnection",
+    "RootQueryToHostConnection",
+    "RootQueryToMediaItemConnection",
+    "MenuToMenuItemConnection",
+    "MenuItemToMenuItemConnection",
+    "RootQueryToMenuItemConnection",
+    "RootQueryToMenuConnection",
+    "RootQueryToPageConnection",
+    "RootQueryToPlaylistConnection",
+    "RootQueryToPluginConnection",
+    "RootQueryToPostFormatConnection",
+    "RootQueryToPostConnection",
+    "RootQueryToProjectConnection",
+    "RootQueryToEnqueuedScriptConnection",
+    "RootQueryToEnqueuedStylesheetConnection",
+    "RootQueryToRevisionsConnection",
+    "RootQueryToTagConnection",
+    "RootQueryToTaxonomyConnection",
+    "RootQueryToTermNodeConnection",
+    "RootQueryToTestimonialConnection",
+    "RootQueryToThemeConnection",
+    "RootQueryToUserRoleConnection",
+    "RootQueryToUserConnection"
+  ],
+  "TaxonomyConnectionEdge": [
+    "ContentTypeToTaxonomyConnectionEdge",
+    "CategoryToTaxonomyConnectionEdge",
+    "PostFormatToTaxonomyConnectionEdge",
+    "TagToTaxonomyConnectionEdge",
+    "RootQueryToTaxonomyConnectionEdge"
+  ],
+  "ContentTypeConnection": [
+    "TaxonomyToContentTypeConnection",
+    "RootQueryToContentTypeConnection"
+  ],
+  "ContentNodeConnection": [
+    "ContentTypeToContentNodeConnection",
+    "HierarchicalContentNodeToContentNodeAncestorsConnection",
+    "HierarchicalContentNodeToContentNodeChildrenConnection",
+    "CategoryToContentNodeConnection",
+    "PostFormatToContentNodeConnection",
+    "TagToContentNodeConnection",
+    "UserToRevisionsConnection",
+    "RootQueryToContentNodeConnection",
+    "RootQueryToRevisionsConnection"
+  ],
+  "ContentNodeConnectionEdge": [
+    "ContentTypeToContentNodeConnectionEdge",
+    "CommentToContentNodeConnectionEdge",
+    "HierarchicalContentNodeToContentNodeAncestorsConnectionEdge",
+    "HierarchicalContentNodeToContentNodeChildrenConnectionEdge",
+    "HierarchicalContentNodeToParentContentNodeConnectionEdge",
+    "NodeWithRevisionsToContentNodeConnectionEdge",
+    "CategoryToContentNodeConnectionEdge",
+    "PostFormatToContentNodeConnectionEdge",
+    "TagToContentNodeConnectionEdge",
+    "UserToRevisionsConnectionEdge",
+    "RootQueryToContentNodeConnectionEdge",
+    "RootQueryToRevisionsConnectionEdge"
+  ],
+  "UserConnectionEdge": [
+    "ContentNodeToEditLockConnectionEdge",
+    "NodeWithAuthorToUserConnectionEdge",
+    "ContentNodeToEditLastConnectionEdge",
+    "RootQueryToUserConnectionEdge"
+  ],
+  "Commenter": ["User", "CommentAuthor"],
+  "DatabaseIdentifier": [
+    "Article",
+    "User",
+    "Comment",
+    "Host",
+    "MediaItem",
+    "Page",
+    "Playlist",
+    "Post",
+    "Category",
+    "PostFormat",
+    "Tag",
+    "Project",
+    "Testimonial",
+    "Menu",
+    "MenuItem",
+    "CommentAuthor"
+  ],
+  "ArticleConnection": [
+    "UserToArticleConnection",
+    "RootQueryToArticleConnection"
+  ],
+  "ArticleConnectionEdge": [
+    "UserToArticleConnectionEdge",
+    "ArticleToPreviewConnectionEdge",
+    "RootQueryToArticleConnectionEdge"
+  ],
+  "CommentConnection": [
+    "UserToCommentConnection",
+    "CommentToCommentConnection",
+    "MediaItemToCommentConnection",
+    "PageToCommentConnection",
+    "PostToCommentConnection",
+    "RootQueryToCommentConnection"
+  ],
+  "CommentConnectionEdge": [
+    "CommentToParentCommentConnectionEdge",
+    "CommentToCommentConnectionEdge",
+    "UserToCommentConnectionEdge",
+    "MediaItemToCommentConnectionEdge",
+    "PageToCommentConnectionEdge",
+    "PostToCommentConnectionEdge",
+    "RootQueryToCommentConnectionEdge"
+  ],
+  "CommenterConnectionEdge": ["CommentToCommenterConnectionEdge"],
+  "EnqueuedScriptConnection": [
+    "UserToEnqueuedScriptConnection",
+    "ContentNodeToEnqueuedScriptConnection",
+    "TermNodeToEnqueuedScriptConnection",
+    "RootQueryToEnqueuedScriptConnection"
+  ],
+  "EnqueuedScriptConnectionEdge": [
+    "UserToEnqueuedScriptConnectionEdge",
+    "ContentNodeToEnqueuedScriptConnectionEdge",
+    "TermNodeToEnqueuedScriptConnectionEdge",
+    "RootQueryToEnqueuedScriptConnectionEdge"
+  ],
+  "EnqueuedAsset": ["EnqueuedScript", "EnqueuedStylesheet"],
+  "EnqueuedStylesheetConnection": [
+    "UserToEnqueuedStylesheetConnection",
+    "ContentNodeToEnqueuedStylesheetConnection",
+    "TermNodeToEnqueuedStylesheetConnection",
+    "RootQueryToEnqueuedStylesheetConnection"
+  ],
+  "EnqueuedStylesheetConnectionEdge": [
+    "UserToEnqueuedStylesheetConnectionEdge",
+    "ContentNodeToEnqueuedStylesheetConnectionEdge",
+    "TermNodeToEnqueuedStylesheetConnectionEdge",
+    "RootQueryToEnqueuedStylesheetConnectionEdge"
+  ],
+  "HostConnection": ["UserToHostConnection", "RootQueryToHostConnection"],
+  "HostConnectionEdge": [
+    "HostToPreviewConnectionEdge",
+    "UserToHostConnectionEdge",
+    "RootQueryToHostConnectionEdge"
+  ],
+  "NodeWithTemplate": [
+    "Article",
+    "Host",
+    "MediaItem",
+    "Page",
+    "Playlist",
+    "Post",
+    "Project",
+    "Testimonial"
+  ],
+  "ContentTemplate": [
+    "DefaultTemplate",
+    "Template_Blank",
+    "Template_BlogAlternative"
+  ],
+  "Previewable": [
+    "Article",
+    "Host",
+    "Page",
+    "Playlist",
+    "Post",
+    "Project",
+    "Testimonial"
+  ],
+  "NodeWithTitle": [
+    "Article",
+    "Host",
+    "MediaItem",
+    "Page",
+    "Playlist",
+    "Post",
+    "Project",
+    "Testimonial"
+  ],
+  "NodeWithAuthor": [
+    "Article",
+    "Host",
+    "MediaItem",
+    "Page",
+    "Playlist",
+    "Post",
+    "Project",
+    "Testimonial"
+  ],
+  "NodeWithFeaturedImage": ["Host", "Page", "Post", "Project"],
+  "MediaItemConnectionEdge": [
+    "NodeWithFeaturedImageToMediaItemConnectionEdge",
+    "UserToMediaItemConnectionEdge",
+    "RootQueryToMediaItemConnectionEdge"
+  ],
+  "NodeWithComments": ["MediaItem", "Page", "Post"],
+  "HierarchicalContentNode": ["MediaItem", "Page"],
+  "HierarchicalNode": ["MediaItem", "Page", "Category"],
+  "MediaItemConnection": [
+    "UserToMediaItemConnection",
+    "RootQueryToMediaItemConnection"
+  ],
+  "PageConnection": [
+    "UserToPageConnection",
+    "PageToRevisionConnection",
+    "RootQueryToPageConnection"
+  ],
+  "PageConnectionEdge": [
+    "PageToPreviewConnectionEdge",
+    "PageToRevisionConnectionEdge",
+    "UserToPageConnectionEdge",
+    "RootQueryToPageConnectionEdge"
+  ],
+  "NodeWithContentEditor": ["Page", "Post"],
+  "NodeWithRevisions": ["Page", "Post"],
+  "NodeWithPageAttributes": ["Page"],
+  "MenuItemLinkable": ["Page", "Post", "Category", "Tag"],
+  "PlaylistConnection": [
+    "UserToPlaylistConnection",
+    "RootQueryToPlaylistConnection"
+  ],
+  "PlaylistConnectionEdge": [
+    "PlaylistToPreviewConnectionEdge",
+    "UserToPlaylistConnectionEdge",
+    "RootQueryToPlaylistConnectionEdge"
+  ],
+  "PostConnection": [
+    "UserToPostConnection",
+    "CategoryToPostConnection",
+    "PostFormatToPostConnection",
+    "PostToRevisionConnection",
+    "TagToPostConnection",
+    "RootQueryToPostConnection"
+  ],
+  "PostConnectionEdge": [
+    "CategoryToPostConnectionEdge",
+    "PostFormatToPostConnectionEdge",
+    "PostToPreviewConnectionEdge",
+    "PostToRevisionConnectionEdge",
+    "TagToPostConnectionEdge",
+    "UserToPostConnectionEdge",
+    "RootQueryToPostConnectionEdge"
+  ],
+  "NodeWithExcerpt": ["Post"],
+  "NodeWithTrackbacks": ["Post"],
+  "CategoryConnection": [
+    "PostToCategoryConnection",
+    "CategoryToAncestorsCategoryConnection",
+    "CategoryToCategoryConnection",
+    "RootQueryToCategoryConnection"
+  ],
+  "CategoryConnectionEdge": [
+    "CategoryToAncestorsCategoryConnectionEdge",
+    "CategoryToCategoryConnectionEdge",
+    "CategoryToParentCategoryConnectionEdge",
+    "PostToCategoryConnectionEdge",
+    "RootQueryToCategoryConnectionEdge"
+  ],
+  "TermNode": ["Category", "PostFormat", "Tag"],
+  "HierarchicalTermNode": ["Category"],
+  "PostFormatConnection": [
+    "PostToPostFormatConnection",
+    "RootQueryToPostFormatConnection"
+  ],
+  "PostFormatConnectionEdge": [
+    "PostToPostFormatConnectionEdge",
+    "RootQueryToPostFormatConnectionEdge"
+  ],
+  "TagConnection": ["PostToTagConnection", "RootQueryToTagConnection"],
+  "TagConnectionEdge": [
+    "PostToTagConnectionEdge",
+    "RootQueryToTagConnectionEdge"
+  ],
+  "TermNodeConnection": [
+    "PostToTermNodeConnection",
+    "RootQueryToTermNodeConnection"
+  ],
+  "TermNodeConnectionEdge": [
+    "PostToTermNodeConnectionEdge",
+    "RootQueryToTermNodeConnectionEdge"
+  ],
+  "ProjectConnection": [
+    "UserToProjectConnection",
+    "RootQueryToProjectConnection"
+  ],
+  "ProjectConnectionEdge": [
+    "ProjectToPreviewConnectionEdge",
+    "UserToProjectConnectionEdge",
+    "RootQueryToProjectConnectionEdge"
+  ],
+  "UserRoleConnection": [
+    "UserToUserRoleConnection",
+    "RootQueryToUserRoleConnection"
+  ],
+  "UserRoleConnectionEdge": [
+    "UserToUserRoleConnectionEdge",
+    "RootQueryToUserRoleConnectionEdge"
+  ],
+  "TestimonialConnection": [
+    "UserToTestimonialConnection",
+    "RootQueryToTestimonialConnection"
+  ],
+  "TestimonialConnectionEdge": [
+    "TestimonialToPreviewConnectionEdge",
+    "UserToTestimonialConnectionEdge",
+    "RootQueryToTestimonialConnectionEdge"
+  ],
+  "MenuItemConnection": [
+    "MenuToMenuItemConnection",
+    "MenuItemToMenuItemConnection",
+    "RootQueryToMenuItemConnection"
+  ],
+  "MenuItemConnectionEdge": [
+    "MenuItemToMenuItemConnectionEdge",
+    "MenuToMenuItemConnectionEdge",
+    "RootQueryToMenuItemConnectionEdge"
+  ],
+  "MenuItemLinkableConnectionEdge": [
+    "MenuItemToMenuItemLinkableConnectionEdge"
+  ],
+  "MenuItemObjectUnion": ["Post", "Page", "Category", "Tag"],
+  "MenuConnectionEdge": [
+    "MenuItemToMenuConnectionEdge",
+    "RootQueryToMenuConnectionEdge"
+  ],
+  "MenuConnection": ["RootQueryToMenuConnection"],
+  "PluginConnection": ["RootQueryToPluginConnection"],
+  "PluginConnectionEdge": ["RootQueryToPluginConnectionEdge"],
+  "ThemeConnection": ["RootQueryToThemeConnection"],
+  "ThemeConnectionEdge": ["RootQueryToThemeConnectionEdge"],
+  "UserConnection": ["RootQueryToUserConnection"]
+}

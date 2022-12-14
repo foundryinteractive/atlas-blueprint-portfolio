@@ -3,12 +3,14 @@ import { RelayStylePaginationPlugin } from './plugins/RelayStylePaginationPlugin
 import { setConfig } from '@faustwp/core';
 import possibleTypes from './possibleTypes.json';
 import templates from './wp-templates';
+import { HostTemplatePlugin } from 'plugins/HostTemplatePlugin';
 
 /**
  * @type {import('@faustwp/core').FaustConfig}
  **/
 export default setConfig({
   experimentalPlugins: [
+    new HostTemplatePlugin(),
     new ProjectTemplatePlugin(),
     new RelayStylePaginationPlugin(),
   ],
